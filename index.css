@@ -1,0 +1,267 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    width: 400px;
+    height: auto;
+} 
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Banner Container Elements */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/pub-burger.jpg");
+    background-position: center;
+    background-size: cover;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+    font-family: 'Rock Salt', cursive;
+    color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    flex-grow: 0;
+}
+
+.banner-text {
+    margin: 0 0 0 20px;
+}
+
+/* Menu Elements */
+.menu-container {
+    margin: 10px 20px;
+}
+
+.items-container {
+    display: flex;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    padding: 20px 0;
+    gap: 10px;
+}
+
+.item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ingredients {
+    color: rgb(175, 175, 175);
+}
+
+.item-emoji {
+    font-size: 50px;
+    width: 100px;
+    text-align: center;
+}
+
+.add-btn {
+    width: 25px;
+    height: 25px;
+    background: #ff0000;
+    border-radius: 20px;
+    margin: auto 0 auto auto;
+    border: 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+/* Order Container */
+
+.checkout-container {
+    padding: 20px;
+    height: 240px;
+    overflow: hidden;
+    display: none;
+}
+
+.checkout-heading {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+.order-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 140px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.order-container::-webkit-scrollbar {
+    background-color: white;
+    width: 10px;
+}
+
+.order-container::-webkit-scrollbar-thumb {
+    background-color: rgb(175, 175, 175);
+    border-radius: 20px;
+    border: 4px solid #fff;
+}
+
+.item-detail {
+    display: block;
+    height: 20px;
+}
+
+.item-num {
+    display: inline-block;
+    text-align: right;
+    width: 16px;
+}
+
+.item-name {
+    font-size: 16px;
+    display: inline;
+}
+
+.remove-btn {
+    background: white;
+    border: 0;
+    color: rgb(175, 175, 175);
+    font-size: 12px;
+    font-family: inherit;
+    padding: 0;
+    margin: 0 0 0 5px;
+}
+
+.price {
+    margin: 0 0 0 auto;
+    float: right;
+}
+
+.total {
+    border-top: 2px solid rgb(175, 175, 175);
+    padding: 10px 0;
+    display: flex;
+    margin-top: auto;
+}
+
+.total-price {
+    margin-left: auto;
+}
+
+.checkout-btn {
+    border: 0;
+    background: #ff0000;
+    color: white;
+    padding: 10px 0;
+    font-family: inherit;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Modal Display */
+
+.modal-container {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.modal {
+    background: #a5a5a5;
+    width: 360px;
+    height: 440px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 0 20px black;
+    border-radius: 20px;
+    display: none;
+}
+
+.x-btn {
+    border: 0;
+    background: transparent;
+    color: white;
+    position: relative;
+    top: 10px;
+    left: 320px;
+}
+
+.user-form {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-heading {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    width: 90%;
+    padding: 0 20px;
+}
+
+.card-text {
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.pay-btn {
+    border: 0;
+    background-color: #ff0000;
+    color: white;
+    font-family: inherit;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+/* Message Container */
+
+.message {
+    background: rgba(255, 0, 0, 0.2);
+    width: auto;
+    height: 60px;
+    margin: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.message-text {
+    color: #ff0000;
+    display: block;
+}
