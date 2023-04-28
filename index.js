@@ -1,4 +1,4 @@
-import { menuArray } from "/data.js"
+import { menuArray } from "./data.js"
 
 const menuContainer = document.getElementById("menu-container")
 const checkoutContainer = document.getElementById("checkout-container")
@@ -16,7 +16,7 @@ let cartList = []
 document.addEventListener("click", function(e){
     if (e.target.dataset.add){
         if (checkoutContainer.style.display === "none"){
-            checkoutContainer.style.display = "block"
+            checkoutContainer.style.display = "flex"
         }
         cartList.push(addItem(e.target.id))
         renderCart()

@@ -2,8 +2,7 @@ body {
     margin: 0 auto;
     padding: 0;
     font-family: 'Bebas Neue', cursive;
-    width: 400px;
-    height: auto;
+    height: 850px;
 } 
 
 h1,
@@ -19,6 +18,10 @@ button {
     cursor: pointer;
 }
 
+.conatiner {
+    height: 100vh;
+}
+
 /* Banner Container Elements */
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/pub-burger.jpg");
@@ -27,7 +30,7 @@ button {
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
     font-family: 'Rock Salt', cursive;
     color: white;
-    height: 100px;
+    height: 10%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -38,11 +41,15 @@ button {
 
 .banner-text {
     margin: 0 0 0 20px;
+    line-height: 20px;
+    font-size: 1em;
 }
 
 /* Menu Elements */
 .menu-container {
     margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .items-container {
@@ -84,9 +91,10 @@ button {
 
 .checkout-container {
     padding: 20px;
-    height: 240px;
+    height: 40%;
     overflow: hidden;
     display: none;
+    flex-direction: column;
 }
 
 .checkout-heading {
@@ -98,7 +106,7 @@ button {
 .order-container {
     display: flex;
     flex-direction: column-reverse;
-    height: 140px;
+    flex: 1;
     overflow-y: auto;
     margin-bottom: 10px;
 }

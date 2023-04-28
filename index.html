@@ -1,5 +1,6 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Header Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,61 +13,64 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="banner">
-            <h2 class="banner-text">Grub Shack</h2>
-            <p class="banner-text">Best American food in town</p>
-        </div>
-        <div class="menu-container" id="menu-container"></div>
-        <div class="checkout-container" id="checkout-container">
-            <p class="checkout-heading">Your Order</p>
-            <div class="order-container" id="order-container"></div>
-            <div class="total">
-                <p>Total Price:</p>
-                <p class="total-price" id="total-price">$0</p>
+        <div class="container">
+            </div><div class="banner">
+                <h2 class="banner-text">Grub Shack</h2>
+                <p class="banner-text">Best American food in town</p>
             </div>
-            <button class="checkout-btn" id="checkout-btn">Complete Order</button>
-        </div>
-        <div class="modal-container" id="modal-container">
-            <div class="modal" id="modal">
-                <button class="x-btn" id="close-btn">x</button>
-                <div class="user-form">
-                    <p class="form-heading">Enter Card Details</p>
-                    <form class="card-details" name="card-info">
-                        <input type="text" 
-                        class="card-text"
-                        name="name"
-                        placeholder="Enter name"
-                        id="name"
-                        autocomplete="off"
-                        required>
-                        
-                        <input type="text" 
-                        class="card-text"
-                        name="number"
-                        placeholder="Enter card number"
-                        id="number"
-                        pattern="[0-9]*"
-                        maxlength="16"
-                        inputmode="numeric"
-                        required>
-                        
-                        <input type="text" 
-                        class="card-text"
-                        name="cvv"
-                        placeholder="Enter CVV"
-                        id="cvv"
-                        maxlength="3"
-                        inputmode="numeric"
-                        required>
-                        
-                        <button class="pay-btn" id="pay-btn">Pay</button>
-                    </form>
+            <div class="menu-container" id="menu-container"></div>
+            <div class="checkout-container" id="checkout-container">
+                <p class="checkout-heading">Your Order</p>
+                <div class="order-container" id="order-container"></div>
+                <div class="total">
+                    <p>Total Price:</p>
+                    <p class="total-price" id="total-price">$0</p>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">Complete Order</button>
+            </div>
+            <div class="modal-container" id="modal-container">
+                <div class="modal" id="modal">
+                    <button class="x-btn" id="close-btn">x</button>
+                    <div class="user-form">
+                        <p class="form-heading">Enter Card Details</p>
+                        <form class="card-details" name="card-info">
+                            <input type="text" 
+                            class="card-text"
+                            name="name"
+                            placeholder="Enter name"
+                            id="name"
+                            autocomplete="off"
+                            required>
+                            
+                            <input type="text" 
+                            class="card-text"
+                            name="number"
+                            placeholder="Enter card number"
+                            id="number"
+                            pattern="[0-9]*"
+                            maxlength="16"
+                            inputmode="numeric"
+                            required>
+                            
+                            <input type="text" 
+                            class="card-text"
+                            name="cvv"
+                            placeholder="Enter CVV"
+                            id="cvv"
+                            maxlength="3"
+                            inputmode="numeric"
+                            required>
+                            
+                            <button class="pay-btn" id="pay-btn">Pay</button>
+                        </form>
+                    </div>
                 </div>
             </div>
+            <div class="message" id="message">
+                <p class="message-text" id="message-text"></p>
+            </div>
         </div>
-        <div class="message" id="message">
-            <p class="message-text" id="message-text"></p>
-        </div>
+        
 	    <script src="index.js" type="module"></script>
     </body>
 </html>

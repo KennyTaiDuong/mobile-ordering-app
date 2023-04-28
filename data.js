@@ -19,5 +19,19 @@ export const menuArray = [
         price: 12,
         emoji: "🍺",
         id: 2
-    }
+    },
+        {
+        name: "Donut",
+        ingredients: ["glaze", "sprinkles", "yeast", "water"],
+        price: 2,
+        emoji: "🍩",
+        id: 3
+    },
+        {
+        name: "Wings",
+        ingredients: ["buffalo", "bbq", "mild", "naked"],
+        price: 10,
+        emoji: "🍗",
+        id: 4
+    },
 ]
